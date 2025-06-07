@@ -1,0 +1,70 @@
+.body{
+    background-color: black;
+}
+
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.greeting {
+  color: #f5c518;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.name span {
+  color: #f5c518;
+}
+
+.role {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.my-works-button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-works-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.image-section img {
+  height: 600px;
+  border-radius: 12px;
+}
