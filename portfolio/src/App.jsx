@@ -21,6 +21,9 @@ function App() {
         <Route path='/resume' element={<ResumePage/>}/>
         <Route path='/projects' element={<ProjectPage/>}/>
         <Route path='/contact' element={<ContactPage/>} />
+        <Route path="*" element={<h1 style={{ color: 'white' }}>404 Page Not Found</h1>} />
+
+        
       </Routes>
     </>
   )

@@ -27,6 +27,7 @@ function NavbarPage() {
               <Link className="nav-link" to="/projects">Projects</Link>
               <Link className="nav-link" to="/contact">Contact</Link>
             </div>
+            
           </div>
         </div>
       </nav>
