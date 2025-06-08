@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 function NavbarPage() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary col-12 col-md-12">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
+
         <div className="container-fluid container">
           <Link className="navbar-brand" to="/">Sanjay Dasari</Link>
           <button

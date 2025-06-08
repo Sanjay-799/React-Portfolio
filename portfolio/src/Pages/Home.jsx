@@ -1,26 +1,23 @@
 import React from "react";
 
+
 function HomePage() {
     return (
-        <>
-
-
-            <div className="homepage container">
-                <div className="text-section">
-                    <h6 className="greeting">HELLO!</h6>
-                    <h1 className="name">
-                        I'm <span>Sanjay Dasari</span>
-                    </h1>
-                    <h3 className="role">Engineer</h3>
-                    <h2 className="title">Aspiring Data Analyst</h2>
+        <section id="hero-section">
+            <div className="grid-container">
+                <div className="content-img">
+                    <img src="/images/abt.jpg" width={200} height={200} alt="Sanjay Dasari" />
+                </div>
+                <div className="content-div">
+                    <span className="main-hello">HELLO!</span>
+                    <h1 className="my-tag">I'm <span className="my-name">Sanjay Dasari</span></h1>
+                    <span className="main-role">Engineer</span>
+                    <h3 className="main-aspiring">Aspiring Data Analyst</h3>
                     <button className="my-works-button">MY WORKS</button>
                 </div>
-
-                <div className="image-section">
-                    <img src="/images/bg3.png" alt="Sanjay Dasari" />
-                </div>
+                
             </div>
-        </>
+        </section>
     );
 }
 
