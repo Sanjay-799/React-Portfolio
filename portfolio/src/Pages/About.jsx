@@ -1,88 +1,101 @@
 import React from "react";
 
-
 function AboutPage() {
-  return (
-    <div className="container-fluid bg-black text-white py-5 px-4">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4 mb-4">
-            {/* Flexbox Row for Image + Info */}
-            <div className="d-flex align-items-center">
-              {/* Profile Image */}
-              <img
-                src="/images/abt.jpg" 
-                alt="Sanjay Dasari"
-                className="img-fluid abt-image rounded-circle border border-white me-3"
-                style={{ width: "160px", height: "160px" }}
-              />
+  const skills = [
+    { name: "SQL", level: 90 },
+    { name: "Python", level: 85 },
+    { name: "Data Visualization", level: 90 },
+    { name: "Statistical Analysis", level: 85 },
+  ];
 
-              {/* Name and Basic Info */}
-              <div>
+  const personalDetails = [
+    { label: "Profile", value: "Data Analytics" },
+    { label: "Domain", value: "Retail, Ecommerce, BFSI & Digital Marketing" },
+    { label: "Education", value: "Bachelor of Engineering" },
+    { label: "Language", value: "English, Telugu, Hindi" },
+    { label: "BI Tools", value: "Microsoft Power BI" },
+    { label: "Other Skills", value: "Excel, Git" },
+    { label: "Interest", value: "Traveling, Travel Photography" },
+  ];
+
+  return (
+    <section className="about-section bg-black text-white py-5">
+      <div className="container">
+        <div className="row g-4">
+          {/* Left Column - Profile and Skills */}
+          <div className="col-lg-4">
+            <div className="profile-card d-flex align-items-center mb-4">
+              <img
+                src="/images/abt.jpg"
+                alt="Sanjay Dasari"
+                className="profile-image rounded-circle border border-2 border-white me-4"
+                width="160"
+                height="160"
+              />
+              <div className="profile-info">
                 <p className="mb-2"><strong>Name:</strong> Sanjay Dasari</p>
                 <p className="mb-2"><strong>Job Role:</strong> Aspiring Data Analyst</p>
                 <p className="mb-2"><strong>Experience:</strong> Fresher</p>
-                <p className="mb-2"><strong>Address:</strong> Hyderabad, India</p>
+                <p className="mb-2"><strong>Location:</strong> Hyderabad, India</p>
               </div>
             </div>
 
-            {/* Skills Section */}
-            <h5 className="mt-4">Skills</h5>
-            {[
-              { name: "SQL", level: 90 },
-              { name: "PYTHON", level: 85 },
-              { name: "Data Visualization", level: 90 },
-              { name: "Statistical Analysis", level: 85 },
-            ].map(skill => (
-              <div key={skill.name} className="mb-3">
-                <div className="d-flex justify-content-between">
-                  <span>{skill.name}</span>
-                  <span>{skill.level}%</span>
+            <div className="skills-section">
+              <h3 className="section-title mb-4">Skills</h3>
+              {skills.map((skill) => (
+                <div key={skill.name} className="skill-item mb-3">
+                  <div className="d-flex justify-content-between mb-1">
+                    <span className="skill-name">{skill.name}</span>
+                    <span className="skill-percent">{skill.level}%</span>
+                  </div>
+                  <div className="progress">
+                    <div
+                      className="progress-bar bg-primary"
+                      role="progressbar"
+                      style={{ width: `${skill.level}%` }}
+                      aria-valuenow={skill.level}
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                 </div>
-                <div className="progress" style={{ height: "8px" }}>
-                  <div
-                    className="progress-bar bg-warning"
-                    style={{ width: `${skill.level}%` }}
-                    role="progressbar"
-                  ></div>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          {/* Right Section: About Me and Details */}
-          <div className="col-md-8">
-            <h1 className="main-heading fw-bold">About Me</h1>
-            <p className="abt-intro mt-3">
+          {/* Right Column - About Me and Details */}
+          <div className="col-lg-8">
+            <h1 className="top-heading mb-4">About Me</h1>
+            <p className="about-text lead mb-5">
               B.Tech student with proficiency in Python, Power BI, and SQL,
-              passionate about data analysis and also interested in machine learning.
+              passionate about data analysis and machine learning.
               Experienced in applying these tools in multiple projects, which are
               available on my GitHub for review, and eager to contribute my skills to
               data-related roles.
             </p>
 
-            <div className="row mt-4">
-              {[
-                { label: "Profile", value: "Data Analytics" },
-                { label: "Domain", value: "Retail, Ecommerce, BFSI & Digital Marketing" },
-                { label: "Education", value: "Bachelor of Engineering" },
-                { label: "Language", value: "English, Telugu, Hindi" },
-                { label: "BI Tools", value: "Microsoft Power BI" },
-                { label: "Other Skills", value: "Excel, Git" },
-                { label: "Interest", value: "Traveling, Travel Photography" },
-              ].map(({ label, value }) => (
-                <div className="col-sm-6 mb-2" key={label}>
-                  <strong>{label}:</strong> {value}
-                </div>
-              ))}
+            <div className="details-section">
+              <div className="row">
+                {personalDetails.map((detail) => (
+                  <div className="col-md-6 mb-3" key={detail.label}>
+                    <p className="mb-1">
+                      <strong>{detail.label}:</strong> {detail.value}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <button className="my-works-button mt-3" onClick={() => {
-    window.open("https://www.linkedin.com/in/dasarisanjay799/", '_blank');
-  }}>Linkedin</button>
+
+            <button 
+              className="btn btn-outline-light mt-4"
+              onClick={() => window.open("https://www.linkedin.com/in/dasarisanjay799/", '_blank')}
+            >
+              View My LinkedIn Profile
+            </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

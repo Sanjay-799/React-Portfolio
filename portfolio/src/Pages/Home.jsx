@@ -1,35 +1,48 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom'
-
-
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
-    const navigate=useNavigate();
-    
+  const navigate = useNavigate();
 
-    function GoToProjectsPage(){
-        navigate('/projects')
-    }
+  const handleProjectsClick = () => {
+    navigate('/projects');
+  };
 
-    return (
-        <section id="hero-section">
-            <div className="grid-container">
-                <div className="content-img">
-                    <img src="/images/abt.jpg" width={200} height={200} alt="Sanjay Dasari" />
-                </div>
-                <div className="content-div">
-                    <span className="main-hello">HELLO!</span>
-                    <h1 className="my-tag">I'm <span className="my-name">Sanjay Dasari</span></h1>
-                    <span className="main-role">Engineer</span>
-                    <h3 className="main-aspiring">Aspiring Data Analyst</h3>
-                    <button className="my-works-button" onClick={()=>{
-                        GoToProjectsPage()
-                    }}>MY WORKS</button>
-                </div>
-                
-            </div>
-        </section>
-    );
+  return (
+    <section className="hero-section">
+      <div className="hero-container">
+        <div className="hero-image-container">
+          <img 
+            src="/images/abt.jpg" 
+            alt="Sanjay Dasari" 
+            className="hero-image"
+            width={250}
+            height={250}
+            loading="lazy"
+          />
+        </div>
+        
+        <div className="hero-content">
+          <span className="hero-greeting">HELLO!</span>
+          <h1 className="hero-title">
+            I'm <span className="hero-name">Sanjay Dasari</span>
+          </h1>
+          {/* <span className="hero-role">Engineer</span> */}
+          <h2 className="hero-subtitle">Aspiring Data Analyst</h2>
+          <p className="hero-description">
+            Transforming raw data into meaningful insights with Python, SQL, and Power BI
+          </p>
+          <button 
+            className="hero-button"
+            onClick={handleProjectsClick}
+            aria-label="View my projects"
+          >
+            VIEW MY WORKS
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default HomePage;
