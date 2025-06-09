@@ -76,7 +76,9 @@ function AboutPage() {
                 </div>
               ))}
             </div>
-            <button className="my-works-button mt-3">Linkedin</button>
+            <button className="my-works-button mt-3" onClick={() => {
+    window.open("https://www.linkedin.com/in/dasarisanjay799/", '_blank');
+  }}>Linkedin</button>
           </div>
         </div>
       </div>

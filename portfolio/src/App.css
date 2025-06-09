@@ -27,7 +27,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  /* align-items: center; */
+  
 }
+
 
 
 @media (min-width: 768px) {
@@ -111,4 +114,69 @@
 
 .progress {
   background-color: #333;
+}
+
+/* ResumePage */
+
+.resume-heading{
+  color: white;
+  font-family: "Antic Slab", serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline;
+  
+}
+.bio{
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card{
+  background: #1f1f1f;
+  color: white;
+  font-family: "Ancizar Serif", serif;
+  margin: 10px;
+  padding: 20px;
+}
+.year{
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Alfa Slab One", serif;
+}
+.college{
+  font-family: "Slabo 27px", serif;
+  font-size: large;
+  font-weight: bold;
+  color: #adacac;
+}
+
+.cgpa{
+  font-size: medium;
+  font-family: "Ancizar Serif", serif;
+}
+
+.btn-resume{
+  margin: 30px;
+  text-align: center;
+  /* border: 1px solid red; */
+
+}
+
+.button-resume{
+  background: #ffc107;
+  padding: 10px;
+  font-family: "Gruppo", sans-serif;
+  color: black;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 60px;
+  width: 150px;
+  border: 2px solid white;
 }
