@@ -103,6 +103,7 @@
 .my-works-button:hover {
   background-color: #ffc107;
   color: black;
+  
 }
 
 
@@ -116,23 +117,30 @@
   background-color: #333;
 }
 
+/* .abt-intro{
+   font-family: "Lustria", serif;
+   font-size: large;
+   font-weight: 500;
+} */
 /* ResumePage */
 
-.resume-heading{
+.main-heading{
   color: white;
-  font-family: "Antic Slab", serif;
+  /* font-family: "Antic Slab", serif; */
+  font-family: "Chango", sans-serif;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-  text-decoration: underline;
-  
+  font-size: 45px; 
 }
+
 .bio{
   color: white;
   font-family: "Libre Franklin", sans-serif;
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
+
   text-align: center;
 }
 
@@ -168,15 +176,30 @@
 
 }
 
-.button-resume{
-  background: #ffc107;
+.project-img{
+  width: 400px;
+  height: 240px;
+}
+
+.project-card{
+  margin-top: 20px;
+  
+}
+
+.project-content{
+ 
   padding: 10px;
-  font-family: "Gruppo", sans-serif;
-  color: black;
+}
+
+.project-title{
+ 
+  font-family: "Noto Sans", sans-serif;
+  color: white;
   font-weight: 500;
-  border-radius: 25px;
-  cursor: pointer;
-  height: 60px;
-  width: 150px;
-  border: 2px solid white;
+  font-size: 25px;
+}
+
+.project-des{
+  color: white;
+  font-family: "EB Garamond", serif;
 }

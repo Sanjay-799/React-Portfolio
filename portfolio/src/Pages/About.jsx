@@ -52,8 +52,8 @@ function AboutPage() {
 
           {/* Right Section: About Me and Details */}
           <div className="col-md-8">
-            <h1 className="fw-bold">About Me</h1>
-            <p className="mt-3">
+            <h1 className="main-heading fw-bold">About Me</h1>
+            <p className="abt-intro mt-3">
               B.Tech student with proficiency in Python, Power BI, and SQL,
               passionate about data analysis and also interested in machine learning.
               Experienced in applying these tools in multiple projects, which are
