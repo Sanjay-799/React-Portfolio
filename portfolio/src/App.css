@@ -174,8 +174,9 @@
 .abt-image {
   height: 250px;
   width: 250px;
+  
   border-radius: 50%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border: 3px solid white;
 }
 
