@@ -8,7 +8,7 @@ function ProjectPage() {
   return (
     <div className="container">
       <div>
-        <h1 className="top-heading">Projects</h1>
+        <h1 className="top-heading mt-3">Projects</h1>
       </div>
       <div className="row">
         {projects.map((project) => (
@@ -39,6 +39,16 @@ function ProjectPage() {
           </div>
         ))}
       </div>
+      <div>
+        <div className="background">
+          <div className="bg-card">
+          <h1 className="project-bg-heading">More projects on <span className="project-span">Github</span> </h1>
+          <p className="project-bg-para">I love to solve business problems & uncover hidden data stories</p>
+          <button className="download-btn">GITHUB</button>
+        </div>
+      </div>
+     </div>
+
     </div>
   );
 }

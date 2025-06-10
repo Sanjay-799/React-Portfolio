@@ -14,9 +14,15 @@ export const projects = [
       image: "/images/blinkit.png",
       description: "Analyzed 8,500+ rows of e-commerce data, ensuring data accuracy. Built interactive dashboards in Power BI to track sales metrics, customer ratings, and regional trends, providing insights into product performance and sales patterns.",
       link: "#" 
+    },{
+      id: 3,
+      title: "Supermarket Sales Analysis",
+      image: "/images/supermarket.jpg",
+      description: "Performed EDA to analyze sales trends, customer behavior, and payment patterns. Identified key factors influencing sales performance.",
+      link: "#" 
     },
     {
-      id: 3,
+      id: 4,
       title: "Coffee Store Sales Analysis",
       image: "/images/coffee.png",
       description: "Cleaned and transformed six months of sales data using Microsoft Excel and Power Query. Developed an interactive dashboard to analyze total sales, customer footfall, product popularity, and peak business hours.",

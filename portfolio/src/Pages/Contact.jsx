@@ -41,6 +41,14 @@ function ContactPage() {
             </div>
           ))}
         </div>
+        <div>
+          <div className="contact-qus-card">
+            <h1 className="">Have a Question?</h1>
+            <button className="download-btn" onClick={()=>
+              window.open("https://docs.google.com/forms/d/e/1FAIpQLScrlpBZt3lbiYU2r89HgINpg4ewQg5cmbXnvrtKrr__oopuEA/viewform",'_blank')
+            }>CLICK HERE</button>
+          </div>
+        </div>
       </div>
     </section>
   );

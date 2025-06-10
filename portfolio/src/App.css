@@ -352,7 +352,8 @@
 
 
 .project-img {
-  width: 400px;
+  width: 450px;
+  
   height: 240px;
   border-radius: 8px;
   
@@ -364,6 +365,7 @@
 
 .project-card {
   margin-top: 20px;
+  /* border: 1px solid red; */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -398,6 +400,43 @@
   color: white;
   margin-bottom: 30px;
   text-align: center;
+}
+
+
+.background {
+  background-image: url('/images/project-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-card {
+  text-align: center; 
+  /* padding: 2rem; */
+}
+
+.project-bg-heading{
+  color: white;
+  font-family: "Chango", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+
+
+.project-bg-para {
+  color: white;
+  font-family: "Ancizar Serif", serif;
+  font-size: 30px;
+}
+.project-span{
+  color: #ffc107;
+  font-family: "Chango", sans-serif;
+  font-weight: bolder;
 }
 
 /* Responsive adjustments */
@@ -528,4 +567,12 @@
   .contact-info {
     font-size: 1rem;
   }
+}
+.contact-qus-card{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  font-family: "Antic Slab", serif;
+  gap: 20px;
 }
