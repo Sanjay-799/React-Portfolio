@@ -16,10 +16,8 @@ function NavbarPage() {
       <div className="container">
         
         <Link className="navbar-brand" to="/">
-          Sanjay Dasari
+          Portfolio
         </Link>
-
-        {/* Hamburger menu button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -32,7 +30,6 @@ function NavbarPage() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar links */}
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto">
             {["/", "/about", "/resume", "/projects", "/contact"].map((path, idx) => {
