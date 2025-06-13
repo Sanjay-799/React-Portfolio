@@ -1,6 +1,6 @@
 import React from "react";
 import { About } from "../about";
-
+import { Data_Bases, DevelopmentSkills, Programming, Visualization } from "../Skills";
 
 function AboutPage() {
   return (
@@ -37,8 +37,86 @@ function AboutPage() {
         
         <div className="skills-section">
           <h1 className="top-heading">Skills</h1>
-          
+          <h2 className="section-heading">Development</h2>
+          <div className="skills-container">
+            <div className="row">
+              {DevelopmentSkills.map((dev) => (
+                <div className="col-6 col-md-3 mb-3" key={dev.id}>
+                  <div className="skill-card">
+                    <img 
+                      src={dev.image} 
+                      alt={dev.Name}
+                      className="skill-icon"
+                    />
+                    <span className="skill-name">{dev.Name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
+
+        <div className="mt-3">
+          <h2 className="section-heading">Programming</h2>
+          <div className="skills-container">
+            <div className="row">
+              {Programming.map((pro) => (
+                <div className="col-6 col-md-3 mb-3" key={pro.id}>
+                  <div className="skill-card">
+                    <img 
+                      src={pro.image} 
+                      alt={pro.Name}
+                      className="skill-icon"
+                    />
+                    <span className="skill-name">{pro.Name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-3">
+          <h2 className="section-heading">Data Visualization</h2>
+          <div className="skills-container">
+            <div className="row">
+              {Visualization.map((data) => (
+                <div className="col-6 col-md-3 mb-3" key={data.id}>
+                  <div className="skill-card">
+                    <img 
+                      src={data.image} 
+                      alt={data.Name}
+                      className="skill-icon"
+                    />
+                    <span className="skill-name">{data.Name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-3">
+          <h2 className="section-heading">Databases</h2>
+          <div className="skills-container">
+            <div className="row">
+              {Data_Bases.map((data) => (
+                <div className="col-6 col-md-3 mb-3" key={data.id}>
+                  <div className="skill-card">
+                    <img 
+                      src={data.image} 
+                      alt={data.Name}
+                      className="skill-icon"
+                    />
+                    <span className="skill-name">{data.Name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   );

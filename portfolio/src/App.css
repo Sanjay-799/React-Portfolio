@@ -231,6 +231,52 @@
     font-size: medium;
   }
 }
+.skills-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  /* background: #2d2d2d; */
+}
+
+.skill-card {
+  background-color: #41403f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #4e4e4e;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Chango", sans-serif;
+}
 /* Resume */
 
 
