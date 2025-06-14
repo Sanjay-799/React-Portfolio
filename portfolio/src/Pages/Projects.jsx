@@ -32,9 +32,12 @@ function ProjectPage() {
                 )}
               </div>
               <div className="project-content">
-                <h2 className="project-title">{project.title}</h2>
+                <a href={project.Live} style={{ color: "white", textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
+                  <h2 className="project-title">{project.title}</h2>
+                </a>
                 <p className="project-des">{project.description}</p>
               </div>
+
             </div>
           </div>
         ))}

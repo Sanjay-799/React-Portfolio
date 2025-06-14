@@ -2,9 +2,6 @@ import React from "react";
 import {education} from '../Resume'
 
 function ResumePage() {
-  
-  
-
   return (
     <section className="resume-section py-5">
       <div className="container">
@@ -12,10 +9,7 @@ function ResumePage() {
         <div className="intro-section text-center mb-5">
           <h1 className="top-heading">Resume</h1>
           <p className="resume-bio">
-            Aspiring Data Analyst with hands-on experience in data analysis, statistical modeling, 
-            and data-driven decision-making. Skilled in Python, Excel, Power BI, and MySQL, with 
-            a strong foundation in data analysis, reporting, and project execution. Passionate about 
-            leveraging data to drive actionable insights and solve real-world problems.
+            I am an aspiring Data Analyst and Web Developer with practical experience in analyzing data and creating websites. Skilled in tools like Python, Power BI, Excel, and React. I enjoy turning data into useful insights and building websites that solve real problems. I'm passionate about using both data and technology to make smart decisions and create meaningful solutions.
           </p>
         </div>
 
