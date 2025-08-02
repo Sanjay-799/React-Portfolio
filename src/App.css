@@ -1,0 +1,674 @@
+.body{
+    background: black;
+}
+
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: white;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  border-radius: 15px;
+  border: 3px solid #ffc107;
+  object-fit: fill;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.03);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero-greeting {
+  color: #ffc107;
+  font-family: "Alumni Sans SC", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.hero-name {
+  color: #ffc107;
+  font-family: "PT Serif", serif;
+}
+
+.hero-role {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-family: "Antic Slab", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.hero-description {
+  /* font-family: "Libre Franklin", sans-serif; */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+}
+
+.hero-button {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 2px solid #ffc107;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-button:hover {
+  background-color: #ffc107;
+  color: #121212;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-button {
+    margin: 0;
+  }
+
+  .hero-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* AboutPage.css */
+
+
+.top-heading {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.abt-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.abt-image {
+  height: 250px;
+  width: 250px;
+  
+  border-radius: 50%;
+  /* object-fit: cover; */
+  border: 3px solid white;
+}
+
+.abt-name-container {
+  width: 100%;
+  text-align: center;
+}
+
+.abt-description-container {
+  width: 100%;
+}
+
+.abt-des {
+  color: white;
+  font-size: large;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.abt-main-name-card {
+  margin: 10px 0;
+}
+
+.abt-main-name {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.skills-section {
+  margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .abt-image {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .abt-main-name {
+    font-size: 24px;
+  }
+  
+  .abt-des {
+    font-size: medium;
+  }
+}
+.skills-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  /* background: #2d2d2d; */
+}
+
+.skill-card {
+  background-color: #41403f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #4e4e4e;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Chango", sans-serif;
+}
+/* Resume */
+
+
+.btn-outline-light {
+  transition: all 0.3s ease;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 992px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+  
+  .top-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .top-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Resume */
+.resume-section {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.top-heading {
+  color: #ffffff;
+  font-family: "Chango", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resume-bio {
+  color: #e0e0e0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  color: #ffffff;
+  font-family: "Chango", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+
+.section-divider {
+  border: 2px solid #333;
+  max-width: 200px;
+  margin: 1rem auto 2rem;
+  opacity: 0.7;
+}
+
+.education-card {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #ffc107;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.education-year {
+  color: #ffc107;
+  font-family: "Alfa Slab One", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.education-degree {
+  font-family: "Ancizar Serif", serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.education-institution {
+  font-family: "Slabo 27px", serif;
+  font-size: 1.1rem;
+  color: #adacac;
+  margin-bottom: 0.5rem;
+}
+
+.education-performance {
+  font-family: "Ancizar Serif", serif;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.download-btn {
+  background-color: #ffc107;
+  color: #121212;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.download-btn:hover {
+  background-color: #ffd700;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+@media (max-width: 768px) {
+  .resume-heading {
+    font-size: 2.2rem;
+  }
+  
+  .resume-bio {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .education-card {
+    padding: 1.5rem;
+  }
+  
+  .education-year {
+    font-size: 1.3rem;
+  }
+  
+  .education-degree {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+.project-img {
+  width: 450px;
+  
+  height: 240px;
+  border-radius: 8px;
+  
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+.project-card {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* height: 100%; */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-title {
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project-des {
+  color: #e0e0e0;
+  font-family: "EB Garamond", serif;
+  line-height: 1.5;
+}
+
+.main-heading {
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.background {
+  background-image: url('/images/project-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-card {
+  text-align: center; 
+  /* padding: 2rem; */
+}
+
+.project-bg-heading{
+  color: white;
+  font-family: "Chango", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+
+
+.project-bg-para {
+  color: white;
+  font-family: "Ancizar Serif", serif;
+  font-size: 30px;
+}
+.project-span{
+  color: #ffc107;
+  font-family: "Chango", sans-serif;
+  font-weight: bolder;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+  
+  .nav-item {
+    margin: 0.25rem 0;
+  }
+}
+
+/* contact */
+.contact-section {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+
+
+.contact-subheading {
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  border-top: 4px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-top-color: #ffc107;
+}
+
+.contact-icon-container {
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+.contact-title {
+  font-family: "Alumni Sans SC", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-info {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.contact-info:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+  
+  .contact-subheading {
+    font-size: 1rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-title {
+    font-size: 1.3rem;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+.contact-qus-card{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  font-family: "Antic Slab", serif;
+  gap: 20px;
+}
